@@ -4,27 +4,26 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta name="description" content="This paper introduces Find n' Propagate, a novel method for open-vocabulary 3D object detection in urban environments, tackling limitations of existing systems by improving recall and detection of novel object classes using vision-language models (VLMs) and multi-sensor data.">
+  <meta property="og:title" content="Find n' Propagate: Open-Vocabulary 3D Object Detection in Urban Environments"/>
+  <meta property="og:description" content="Find n' Propagate is a novel method that addresses the limitations of current LiDAR-based 3D object detection systems by increasing recall for novel objects through a greedy box seeker and remote simulator."/>
+  <meta property="og:url" content="https://github.com/djamahl99/findnpropagate"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:title" content="Find n' Propagate: Open-Vocabulary 3D Object Detection"/>
+  <meta name="twitter:description" content="Find n' Propagate leverages vision-language models and multi-sensor data to maximize recall for novel objects in urban environments, with a 53% improvement in novel recall."/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="3D Object Detection, Open-Vocabulary Learning, LiDAR, Vision-Language Models, Urban Environments, Novel Object Detection, Self-Training, Greedy Box Seeker, Remote Simulator">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>Academic Project Page</title>
+  <meta name="robots" content="index, follow">
+  <title>Find n' Propagate | ECCV 2024</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -43,6 +42,27 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <style>
+    p {
+        margin-bottom: 1.5em;
+        line-height: 1.6;
+    }
+
+    .has-text-justified {
+        text-align: left;
+    }    
+
+    @media (max-width: 768px) {
+        .carousel .item {
+            width: 100%;
+        }
+    }
+    
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+  
 </head>
 <body>
 
@@ -52,20 +72,31 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Find n' Propagate: Open-Vocabulary 3D Object Detection in Urban Environments</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+              <!-- <h1></h1> -->
+
+              <div class="author-list">
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+                  <a href="https://yourpersonalurl1.com" target="_blank">Djamahl Etchegaray</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://yourpersonalurl2.com" target="_blank">Zi Huang</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://yourpersonalurl3.com" target="_blank">Tatsuya Harada</a><sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://yourpersonalurl4.com" target="_blank">Yadan Luo</a><sup>1</sup>
+                </span>
+              </div>
+              
+              <p style="margin-bottom:0"><sup>1</sup>UQMM Lab, University of Queensland, Brisbane, Australia</p>
+              <p style="margin-bottom:0"><sup>2</sup>The University of Tokyo, Tokyo, Japan</p>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="author-block">ECCV 2024</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
@@ -95,7 +126,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/djamahl99/findnpropagate" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -106,7 +137,7 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/2403.13556" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -123,22 +154,6 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -147,9 +162,13 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+          <p>In this work, we tackle the limitations of current LiDAR-based 3D object detection systems, which are hindered by a restricted class vocabulary and the high costs associated with annotating new object classes. Our exploration of open-vocabulary (OV) learning in urban environments aims to capture novel instances using pre-trained vision-language models (VLMs) with multi-sensor data. We design and benchmark a set of four potential solutions as baselines, categorizing them into either top-down or bottom-up approaches based on their input data strategies.</p>
+
+          <p>While effective, these methods exhibit certain limitations, such as missing novel objects in 3D box estimation or applying rigorous priors, leading to biases towards objects near the camera or of rectangular geometries. To overcome these limitations, we introduce a universal <strong>Find n' Propagate</strong> approach for 3D OV tasks, aimed at maximizing the recall of novel objects and propagating this detection capability to more distant areas thereby progressively capturing more.</p>
+      
+          <p>In particular, we utilize a greedy box seeker to search against 3D novel boxes of varying orientations and depth in each generated frustum and ensure the reliability of newly identified boxes by cross alignment and density ranker. Additionally, the inherent bias towards camera-proximal objects is alleviated by the proposed remote simulator, which randomly diversifies pseudo-labeled novel instances in the self-training process, combined with the fusion of base samples in the memory bank.</p>
+      
+          <p>Extensive experiments demonstrate a 53% improvement in novel recall across diverse OV settings, VLMs, and 3D detectors. Notably, we achieve up to a 3.97-fold increase in Average Precision (AP) for novel object classes. The source code is made available at <a href="https://github.com/djamahl99/findnpropagate" target="_blank">github.com/djamahl99/findnpropagate</a>.</p>
         </div>
       </div>
     </div>
@@ -158,106 +177,94 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
+<!-- Baselines section -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <h2 class="title is-3">Baselines</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+          <img src="static/images/tp-bu-eccv.jpg" style="width: 75%; min-width:640px;border: none;">
+          <!-- <iframe src="images/tp-bu-eccv-new.pdf" style="width: 100%;height: 100%;border: none;"></iframe> -->
         </div>
       </div>
+      <p>In this work, we investigate the potential of leveraging OV learning for 3D object detection by employing high-resolution LiDAR data (<strong>Top</strong>) and multi-view imagery (<strong>Bottom</strong>). As illustrated in Fig. <a href="#fig-top-down-bottom-up">1</a>, four baseline solutions are designed: (1) <strong>Top-down Projection</strong>, (2) <strong>Top-down Self-train</strong>, (3) <strong>Top-down Clustering</strong>, and (4) <strong>Bottom-up Weakly-supervised</strong> 3D detection approaches to facilitate novel object discovery in point clouds.</p>
+
+      <p>The foundation of our <strong>Top-down</strong> strategies is inspired by advancements in 2D OV learning, where one can regress class-agnostic bounding boxes based on base box annotations and subsequently leverage VLMs for open-vocabulary classification. Based on that, the <strong>Top-down Self-train</strong> is the variant that further enhances open-vocabulary performance through self-training mechanisms. Beyond mere 2D projections, our third <strong>Top-down</strong> baseline explores the feasibility of applying open-vocabulary 3D segmentation directly to 3D detection tasks, utilizing clustering techniques for 3D bounding box estimation.</p>
+  
+      <p>Nevertheless, it is observed that <strong>Top-down</strong> methods can easily overfit to known classes, potentially <em>overlooking</em> novel objects with varying sizes and shapes. As shown in the visualization of Fig. <a href="#fig-top-down-bottom-up">1</a>, unseen objects that are of vastly different shapes, such as long vehicles like buses or small traffic cones, often go undetected in class-agnostic 3D proposals and are obscured in 2D crops due to occlusion.</p>
+  
+      <p>The <strong>Bottom-up</strong> approach presents a cost-effective alternative akin to weakly-supervised 3D object detection, lifting 2D annotations to construct 3D bounding boxes. Different from <strong>Top-down</strong> counterparts, this approach is training-free and does not rely on any base annotations, potentially making it more generalizable and capable of finding objects with diverse shapes and densities. In Baseline IV, we study FGR <a href="#ref1">(Wei et al., 2021)</a> as an exemplar of <strong>Bottom-up Weakly-supervised</strong> and evaluate its effectiveness in generating novel proposals. FGR starts with removing background points such as the ground plane, then incorporates the human prior into key-vertex localization to refine box regression. However, their study was limited to regressing car objects, as their vertex localization assumes <em>rectangular</em> objects which do not hold for other classes (e.g., pedestrians).</p>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- Baselines section -->
+
+<!-- our method section -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Our Method</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img src="static/images/new_fig_eccv_export.png" style="width: 75%; min-width:640px;border: none;">
+          <!-- <iframe src="images/tp-bu-eccv-new.pdf" style="width: 100%;height: 100%;border: none;"></iframe> -->
+        </div>
+      </div>
+      <p>To address the baseline limitations, we propose a novel <strong><em>Find n' Propagate</em></strong> approach to maximize the recall rate of novel objects and then propagate the knowledge to distant regions from the camera progressively. We identify most detection failures of novel objects stem from the uncertainties in 3D object orientation and depth. This observation motivates the development of a <strong>Greedy Box Seeker</strong> strategy that initiates by generating instance frustums for each unique 2D box prediction region, utilizing <strong>Region VLMs</strong> such as GLIP <a href="#ref2">(Li et al., 2022)</a>, or pre-trained OV 2D models like OWL-ViT <a href="#ref3">(Minderer et al., 2022)</a>.</p>
+  
+      <p>These frustums are segmented into subspaces across different angles and depth levels to facilitate an exhaustive greedy search for the most apt 3D proposal, accommodating a wide variety of shapes and sizes. To control the quality of newly generated boxes, we implement a <strong>Greedy Box Oracle</strong> that employs two key criteria of multi-view alignment and density ranking to select the most probable proposal. The rationale behind that is that 2D predictions predominantly originate from objects near the camera, characterized by dense point clouds and substantial overlap with the 2D box upon re-projection.</p>
+  
+      <p>Recognizing that relying solely on pseudo labels generated from these 2D predictions could bias the detector towards objects near the camera and overlook those that are distant or obscured, we propose a <strong>Remote Propagator</strong> to mitigate the bias. To augment novel pseudo labels with distant object geometries, geometry and density simulators are employed to perturb pseudo label boxes to farther distances from the camera and mimic sparser structures. The refined 3D proposals are subsequently integrated into a memory bank, facilitating iterative training of the detection model.</p>
+  
+    </div>
+  </div>
+</section>
+<!-- our method section -->
 
 
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">Qualitative Results</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
+            <source src="static/videos/scene_409_cam_web.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
+            <source src="static/videos/scene_262_cam_web.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
             <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
+            <source src="static/videos/scene_449_cam_web.mp4"
             type="video/mp4">
           </video>
         </div>
       </div>
+
+      <!-- description -->
+      <p>
+        <strong style="color: green;">Green</strong> boxes represent ground-truth known classes, 
+        <strong style="color: pink;">pink</strong> boxes denote ground-truth novel classes, and 
+        <span style="color: blue;">blue</span> boxes indicate model predictions.
+      </p>      
+      
     </div>
   </div>
 </section>
 <!-- End video carousel -->
-
-
-
-
-
 
 <!-- Paper poster -->
 <section class="hero is-small is-light">
@@ -265,9 +272,9 @@
     <div class="container">
       <h2 class="title">Poster</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+      <iframe  src="static/pdfs/ECCV_2024_Find_n_Propagate_Poster.pdf" width="100%" height="550">
+      </iframe>
+      
       </div>
     </div>
   </section>
@@ -278,7 +285,18 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@inproceedings{DBLP:conf/eccv/Etche24,
+        author       = {Djamahl Etchegaray and
+                        Zi Huang and
+                        Tatsuya Harada and
+                        Yadan Luo},
+        title        = {Find n' Propagate: Open-Vocabulary 3D Object Detection in Urban Environments},
+        booktitle    = {Computer Vision - {ECCV} 2024 - The 18th European Conference on Computer Vision},
+        year         = {2024},
+        url          = {https://doi.org/10.48550/arXiv.2403.13556}
+            
+      }
+  </code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -301,12 +319,6 @@
     </div>
   </div>
 </footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
 
   </body>
   </html>
